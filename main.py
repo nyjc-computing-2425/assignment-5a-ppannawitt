@@ -20,6 +20,8 @@ def to_hms(seconds: int) -> list:
     >>> to_hms(7199)
     [1, 59, 59]
     """
-    # Type your code below
-    pass
+    if type(seconds)!=type(3):
+      print("Unsupported input type.")
+    else:
+      return [seconds//3600, (seconds%3600)//60, (seconds%3600)%60]
 
